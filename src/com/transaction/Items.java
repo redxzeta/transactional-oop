@@ -1,9 +1,9 @@
 package com.transaction;
 
-public class Items {
+abstract class Items {
     private int id;
     private String name;
-    private double cost;
+    protected double cost;
     public Items(int id, String name, double cost){
         this.id=id;
         this.name=name;
@@ -38,4 +38,6 @@ public class Items {
         System.out.println("cost: " + this.cost);
         System.out.println("id: " + this.id);
     }
+
+    public abstract void totalCost();
 }
