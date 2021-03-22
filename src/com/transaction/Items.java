@@ -21,6 +21,10 @@ abstract class Items {
         return name;
     }
 
+    public double getTotalCost() {
+        return cost;
+    }
+
     public void setName(String name) {
         this.name = name;
     }

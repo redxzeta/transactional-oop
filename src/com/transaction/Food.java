@@ -27,6 +27,11 @@ public class Food extends Items {
     }
 
     @Override
+    public double getTotalCost(){
+        return quantity * this.cost + serviceFee;
+    }
+
+    @Override
     public void totalCost() {
         double total = quantity * this.cost + serviceFee ;
         System.out.println("The total: " + total);
